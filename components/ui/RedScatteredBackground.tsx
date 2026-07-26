@@ -51,7 +51,7 @@ export function RedScatteredBackground() {
     resize();
 
     // Generate 75 red scattered particles floating across the website view
-    let particles: RedParticle[] = Array.from({ length: 75 }, () => ({
+    const particles: RedParticle[] = Array.from({ length: 75 }, () => ({
       x: Math.random() * canvas.width,
       y: Math.random() * canvas.height,
       vx: (Math.random() - 0.5) * 0.45,
