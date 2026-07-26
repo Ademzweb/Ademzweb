@@ -21,11 +21,11 @@ export const siteConfig = {
     state: "DL",
     zip: "110025",
     country: "India",
-    full: " Security Boulevard, Suite 500, San Francisco, CA 94105",
+    full: "B-272, Pocket B, Okhla Phase I, Okhla Industrial Estate, New Delhi, Delhi 110020",
   },
 
   mapEmbedUrl:
-    "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.097715303223!2d-122.4194154846814!3d37.774929779759!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085809c6c8f4459%3A0xb10ed6d9b5050fa5!2sSan%20Francisco%2C%20CA!5e0!3m2!1sen!2sus!4v1700000000000!5m2!1sen!2sus",
+    "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3505.32643693752!2d77.27799929999999!3d28.5299063!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce1dc3fcd581b%3A0x8546965d069eb58c!2sAdemzweb!5e0!3m2!1sen!2sin!4v1785062636250!5m2!1sen!2sin",
 
   // Logo — your brand logo in /public/logo.png
   logo: {
