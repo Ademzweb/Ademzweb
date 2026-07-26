@@ -125,9 +125,12 @@ export function InteractiveScanner() {
                   onChange={(e) => setTarget(e.target.value)}
                   disabled={isScanning}
                   placeholder="e.g. app.yourdomain.com"
-                  className="w-full rounded-lg border border-border bg-background/80 px-4 py-3 font-mono text-sm text-text placeholder:text-text-muted/40 focus:border-accent focus:outline-none focus:ring-1 focus:ring-accent disabled:opacity-50"
+                  /* FIX: Added pr-72 (right padding) and explicit text color styling */
+                  className="w-full rounded-lg border border-border bg-background px-4 pr-72 py-3 font-mono text-sm text-text-light dark:text-text placeholder:text-text-muted/40 focus:border-accent focus:outline-none focus:ring-1 focus:ring-accent disabled:opacity-60"
                 />
-                <div className="absolute right-2 top-2 flex items-center gap-1">
+  
+                {/* Preset Quick Buttons */}
+                <div className="absolute right-2 top-1/2 -translate-y-1/2 flex items-center gap-1">
                   {PRESETS.map((preset) => (
                     <button
                       key={preset}
@@ -137,7 +140,8 @@ export function InteractiveScanner() {
                         setTarget(preset);
                       }}
                       disabled={isScanning}
-                      className="hidden sm:inline-block rounded bg-surfaceLight px-2 py-1 font-mono text-[10px] text-text-muted transition-colors hover:bg-accent/20 hover:text-accent disabled:opacity-50"
+                      /* FIX: Ensured background is dark/transparent surface and text stays readable */
+                      className="hidden sm:inline-block rounded border border-border/50 bg-surface/80 px-2 py-1 font-mono text-[10px] text-text-muted transition-colors hover:border-accent hover:bg-accent/20 hover:text-accent disabled:opacity-50"
                     >
                       {preset.split(".")[0]}
                     </button>

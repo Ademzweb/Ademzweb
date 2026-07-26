@@ -120,7 +120,8 @@ export function Contact() {
                       value={formData.name}
                       onChange={handleChange}
                       placeholder={contactContent.form.namePlaceholder}
-                      className="w-full rounded-lg border border-border bg-background/50 px-4 py-3 text-text placeholder:text-text-muted/50 focus:border-accent focus:outline-none focus:ring-1 focus:ring-accent"
+                      /* FIX: bg-slate-900/90, explicit text-white, and autofill text color fix */
+                      className="w-full rounded-lg border border-border bg-slate-900/90 px-4 py-3 text-white placeholder:text-gray-400 focus:border-accent focus:outline-none focus:ring-1 focus:ring-accent autofill:bg-slate-900 autofill:text-white"
                     />
                   </div>
                   <div>
@@ -138,7 +139,8 @@ export function Contact() {
                       value={formData.email}
                       onChange={handleChange}
                       placeholder={contactContent.form.emailPlaceholder}
-                      className="w-full rounded-lg border border-border bg-background/50 px-4 py-3 text-text placeholder:text-text-muted/50 focus:border-accent focus:outline-none focus:ring-1 focus:ring-accent"
+                      /* FIX: bg-slate-900/90, explicit text-white, and autofill text color fix */
+                      className="w-full rounded-lg border border-border bg-slate-900/90 px-4 py-3 text-white placeholder:text-gray-400 focus:border-accent focus:outline-none focus:ring-1 focus:ring-accent autofill:bg-slate-900 autofill:text-white"
                     />
                   </div>
                 </div>
@@ -158,7 +160,8 @@ export function Contact() {
                       value={formData.company}
                       onChange={handleChange}
                       placeholder={contactContent.form.companyPlaceholder}
-                      className="w-full rounded-lg border border-border bg-background/50 px-4 py-3 text-text placeholder:text-text-muted/50 focus:border-accent focus:outline-none focus:ring-1 focus:ring-accent"
+                      /* FIX: bg-slate-900/90, explicit text-white, and autofill text color fix */
+                      className="w-full rounded-lg border border-border bg-slate-900/90 px-4 py-3 text-white placeholder:text-gray-400 focus:border-accent focus:outline-none focus:ring-1 focus:ring-accent autofill:bg-slate-900 autofill:text-white"
                     />
                   </div>
                   <div>
@@ -175,7 +178,8 @@ export function Contact() {
                       value={formData.phone}
                       onChange={handleChange}
                       placeholder={contactContent.form.phonePlaceholder}
-                      className="w-full rounded-lg border border-border bg-background/50 px-4 py-3 text-text placeholder:text-text-muted/50 focus:border-accent focus:outline-none focus:ring-1 focus:ring-accent"
+                      /* FIX: bg-slate-900/90, explicit text-white, and autofill text color fix */
+                      className="w-full rounded-lg border border-border bg-slate-900/90 px-4 py-3 text-white placeholder:text-gray-400 focus:border-accent focus:outline-none focus:ring-1 focus:ring-accent autofill:bg-slate-900 autofill:text-white"
                     />
                   </div>
                 </div>
@@ -195,7 +199,8 @@ export function Contact() {
                     value={formData.message}
                     onChange={handleChange}
                     placeholder={contactContent.form.messagePlaceholder}
-                    className="w-full resize-none rounded-lg border border-border bg-background/50 px-4 py-3 text-text placeholder:text-text-muted/50 focus:border-accent focus:outline-none focus:ring-1 focus:ring-accent font-sans"
+                    /* FIX: bg-slate-900/90, explicit text-white, and autofill text color fix */
+                    className="w-full resize-none rounded-lg border border-border bg-slate-900/90 px-4 py-3 text-white placeholder:text-gray-400 focus:border-accent focus:outline-none focus:ring-1 focus:ring-accent font-sans"
                   />
                 </div>
 
