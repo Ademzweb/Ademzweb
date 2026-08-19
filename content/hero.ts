@@ -16,5 +16,5 @@ export const heroContent = {
     href: "#services",
   },
   // Badge text shown above the headline
-  badge: "Trusted by 100+ Businesses Worldwide",
+  badge: "Enterprise-Grade Protection",
 };

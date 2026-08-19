@@ -12,9 +12,9 @@ export function ScannerSection() {
     >
       <div className="section-container">
         <SectionHeading
-          label="Live Simulator"
-          title="Interactive Security Audit & Threat Matrix"
-          description="Test your host or select an enterprise profile below to simulate a real-time vulnerability scan, inspect telemetry logs, and analyze posture score."
+          label="Live Scanner"
+          title="Real-Time Domain Security Scanner"
+          description="Enter any public domain below to perform a live security audit. We analyze DNS records, SSL/TLS certificates, and HTTP security headers in real-time."
         />
 
         <div className="mx-auto max-w-5xl">

@@ -45,7 +45,7 @@ export function Services() {
                   <div className="group relative">
                     {/* Icon & Inspect badge */}
                     <div className="mb-4 flex items-center justify-between">
-                      <div className="inline-flex rounded-xl bg-primary/10 p-3 text-primary transition-colors group-hover:bg-accent/10 group-hover:text-accent">
+                      <div className="inline-flex rounded-xl bg-accent/10 p-3 text-accent transition-colors group-hover:bg-accent/20 group-hover:text-accent">
                         <Icon size={24} aria-hidden="true" />
                       </div>
                       <span className="flex items-center gap-1 rounded-full border border-border bg-background/60 px-2.5 py-1 font-mono text-[10px] text-text-muted transition-colors group-hover:border-accent/40 group-hover:text-accent">
