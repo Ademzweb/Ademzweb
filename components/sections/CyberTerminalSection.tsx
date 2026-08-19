@@ -39,10 +39,12 @@ export function CyberTerminalSection() {
     },
   ]);
 
-  const bottomRef = useRef<HTMLDivElement>(null);
+  const containerRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    bottomRef.current?.scrollIntoView({ behavior: "smooth" });
+    if (containerRef.current) {
+      containerRef.current.scrollTop = containerRef.current.scrollHeight;
+    }
   }, [history]);
 
   const handleRunCommand = (cmdStr: string) => {
@@ -194,7 +196,7 @@ export function CyberTerminalSection() {
             </div>
 
             {/* Console Output Area */}
-            <div className="h-80 overflow-y-auto bg-black/85 p-4 font-mono text-xs leading-relaxed md:p-6">
+            <div ref={containerRef} className="h-80 overflow-y-auto bg-black/85 p-4 font-mono text-xs leading-relaxed md:p-6">
               {history.map((line) => (
                 <div key={line.id} className="mb-2 whitespace-pre-wrap">
                   {line.type === "input" && (
@@ -214,7 +216,6 @@ export function CyberTerminalSection() {
                   )}
                 </div>
               ))}
-              <div ref={bottomRef} />
             </div>
 
             {/* Input prompt line */}
